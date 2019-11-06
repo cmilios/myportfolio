@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -13,8 +13,12 @@ const useStyles = makeStyles({
       height: 200,
       padding:2,
       margin:10,
-      display: "inline-table",
-      "background-color": "whitesmoke"
+      display: "flex",
+      "background-color": "whitesmoke",
+      flexGrow: 1,
+      flexWrap: "wrap",
+      justifyContent: "space-between"
+
 
     },
     bullet: {
@@ -23,7 +27,8 @@ const useStyles = makeStyles({
       transform: 'scale(0.8)',
     },
     title: {
-      fontSize: 14,
+      fontSize: 20,
+      marginBottom: 10
     },
     pos: {
       marginBottom: 12,
@@ -37,10 +42,10 @@ const Post = ({title, body,userId, id}) =>{
     return (
         <Card className={classes.card} raised = {true}>
         <CardContent>
-            <Typography className={classes.title} /*variant="h5" component="h2"*/>
+            <Typography className={classes.title} variant="h5" component="h2">
             {title}
             </Typography>
-            <Typography variant="body2" component="p">
+            <Typography variant="body2" component="p" color="textSecondary">
             {body}
             </Typography>
         </CardContent>
