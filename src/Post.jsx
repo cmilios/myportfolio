@@ -33,6 +33,9 @@ const useStyles = makeStyles({
     pos: {
       marginBottom: 12,
     },
+    buttons:{
+      alignSelf: "flex-end"
+    }
   });
 
 const Post = ({title, body,userId, id}) =>{
@@ -49,7 +52,7 @@ const Post = ({title, body,userId, id}) =>{
             {body}
             </Typography>
         </CardContent>
-        <CardActions>
+        <CardActions className={classes.buttons}>
             <Button size="small">Learn More</Button>
         </CardActions>
         </Card>
