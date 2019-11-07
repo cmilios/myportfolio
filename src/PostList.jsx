@@ -24,6 +24,7 @@ const PostList = ({posts}) =>{
             x.title = x.title[0].toUpperCase()+ x.title.substring(1).toLowerCase()
             return <Post title={x.title} body={x.body} userId={x.userId} id={x.id} key = {x.id} />;
         }
+        
     })
     return(
         <div className={classes.list}>
