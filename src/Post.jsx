@@ -34,7 +34,7 @@ const useStyles = makeStyles({
       marginBottom: 12,
     },
     buttons:{
-      alignSelf: "flex-end"
+      alignSelf: "flex-end",
     }
   });
 
@@ -48,12 +48,12 @@ const Post = ({title, body,userId, id}) =>{
             <Typography className={classes.title} variant="h5" component="h2">
             {title}
             </Typography>
-            <Typography variant="body2" component="p" color="textSecondary">
+            <Typography variant="inherit" component="p" color="textSecondary">
             {body}
             </Typography>
         </CardContent>
-        <CardActions className={classes.buttons}>
-            <Button size="small">Learn More</Button>
+        <CardActions>
+            <Button className={classes.buttons} size="small">Learn More</Button>
         </CardActions>
         </Card>
     );

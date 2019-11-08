@@ -2,20 +2,20 @@ export const posts = [
   {
     "userId": 1,
     "id": 1,
-    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    "title": "I-Vet Web Application",
+    "body": "A medical pet monitoring web application currently used by the Aristotle University of Thessaloniki, Biovet Veterinary Center and Attiko Vetterinary Center"
   },
   {
     "userId": 1,
     "id": 2,
-    "title": "qui est esse",
-    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+    "title": "Logistic-i B2B Android Application",
+    "body": "A Mobile B2B appliation that uses the SoftOne ERP Services to make orders."
   },
   {
     "userId": 1,
     "id": 3,
-    "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
-    "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+    "title": "Life Tracker Suite Programs",
+    "body": "In progress: This project tries to create a Native/Web Application that lets teh user journal and track the biologigal and sentimental status of the individual. Lets the user create to-do tasks, record events and mood about the day and much more."
   },
   {
     "userId": 1,

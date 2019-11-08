@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import './index.css';
 import { Typography } from '@material-ui/core';
 import 'tachyons'
+import NavigationBar from "./NavigationBar";
 
 
 const useStyles = makeStyles({
@@ -16,8 +17,9 @@ const Home = ()=>{
     const classes = useStyles();
     return(
         <div className="home">
+            <NavigationBar></NavigationBar>
             <div className="tt">
-                <Typography className="tc mwebfont " variant="h1" component="h1" noWrap>Welcome </Typography>
+                <Typography className="tc mwebfont" variant="h1" component="h1" noWrap>Welcome </Typography>
                 <Typography className="tc mwebfont" variant="subtitle1" component="p">This is an interactive representation of my skills</Typography>
             </div>
             <PostList posts={posts} className={classes.list}/>
