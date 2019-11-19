@@ -38,9 +38,11 @@ const useStyles = makeStyles({
     }
   });
 
-const Post = ({title, body,userId, id}) =>{
+const Post = ({title, body,userId, id, mailUri}) =>{
     const classes = useStyles();
-   
+    const mail = "mailto:"+mailUri+"?subject=Get details for "+
+    title+"&body=Hello, I request to get details about "+title+
+    " could I have more info%3F";
 
     return (
         <Card className={classes.card} raised = {true}>
@@ -53,7 +55,7 @@ const Post = ({title, body,userId, id}) =>{
             </Typography>
         </CardContent>
         <CardActions>
-            <Button className={classes.buttons} size="small">Learn More</Button>
+            <Button className={classes.buttons} href={mail} size="small">Learn More</Button>
         </CardActions>
         </Card>
     );

@@ -22,7 +22,7 @@ const PostList = ({posts}) =>{
     const postComponent = posts.map(x=>{
         if(x.id<4){
             // x.title = x.title[0].toUpperCase()+ x.title.substring(1).toLowerCase()
-            return <Post title={x.title} body={x.body} userId={x.userId} id={x.id} key = {x.id} />;
+            return <Post title={x.title} body={x.body} userId={x.userId} id={x.id} key = {x.id} mailUri={x.mailUri} />;
         }
         return null;
     })
